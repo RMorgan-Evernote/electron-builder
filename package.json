@@ -1,6 +1,6 @@
 {
   "name": "@electron-builder/monorepo",
-  "version": "1.0",
+  "version": "2020.11.6",
   "description": "Evernote Modified Electron-Builder",
   "private": true,
   "workspaces": [

@@ -47,9 +47,10 @@ ${if} $isTryToKeepShortcuts == "true"
 ${endif}
 
 !insertmacro uninstallOldVersion SHELL_CONTEXT
-${if} $installMode == "all"
-  !insertmacro uninstallOldVersion HKEY_CURRENT_USER
-${endIf}
+; EVERNOTE MOD - remove uninstall of per-user if updating per-machine
+;${if} $installMode == "all"
+;  !insertmacro uninstallOldVersion HKEY_CURRENT_USER
+;${endIf}
 
 SetOutPath $INSTDIR
 
